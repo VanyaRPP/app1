@@ -1,0 +1,19 @@
+
+.wse{
+  display: grid;
+  grid-template-areas: 
+  "h h"
+  "m k"
+  ;
+  grid-template-rows: 1fr 10fr;
+  grid-auto-columns: 150px 10fr;
+
+  background-color: rgb(255, 217, 0);
+}
+
+
+.Kontent{
+  grid-area: k;
+}
+
+

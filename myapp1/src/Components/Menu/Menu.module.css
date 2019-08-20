@@ -1,0 +1,10 @@
+.Menu{
+    grid-area: m;
+    background-color: rgb(67, 51, 82);
+  }
+  .Menu div{
+    color: goldenrod;
+    margin: 10px;
+    font-style: Arial;
+    font-stretch: normal;
+  }

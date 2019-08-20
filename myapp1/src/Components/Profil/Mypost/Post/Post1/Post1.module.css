@@ -1,0 +1,14 @@
+.Post1 img{
+    background-color: whitesmoke;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+.Post1{
+    background-color: aqua;
+    margin: 5px;
+    
+}
+.Post1 span{
+    color: rgb(0, 0, 0);
+}
