@@ -7,7 +7,6 @@ import InfoMen from './InfoMen/InfoMen';
 const Profil = () => {
     return (
         <div className={c.Profil}>
-
             <InfoMen />
             <Post />
         </div>

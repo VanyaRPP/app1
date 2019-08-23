@@ -10,6 +10,8 @@
 
   background-color: rgb(255, 217, 0);
 }
-
+.wse.content{
+  grid-area: k;
+}
 
 
