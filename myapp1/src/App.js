@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Components/Heder/Header';
 import Menu from './Components/Menu/Menu';
 import Profil from './Components/Profil/Profil';
+import Messages from './Components/Messages/Messages';
 
 
 
@@ -12,7 +13,8 @@ const App = () => {
     <div className = 'wse'>
       <Header/>
       <Menu/>
-      <Profil/>
+      {/*<Profil/>*/}
+      <Messages/>
     </div> 
   );
 }

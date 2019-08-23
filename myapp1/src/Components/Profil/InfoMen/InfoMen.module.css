@@ -1,19 +1,17 @@
-/*<img src="http://www.fon.bg.ac.rs/eng/downloads/sites/2/2018/03/Fon-cover-1024x483.jpg" />*/
-
-.Avan{
-    
-}
-.Ava{
-
-}
-.Name{
-   
-}
-
 .Fon{
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+
     background-image: url(https://png.pngtree.com/thumb_back/fh260/back_pic/00/12/57/99563ee4a1b1e89.jpg);
 }
 .Ava img{
+    margin: 20px;
     background-color: gold;
     
-  }
+}
+.Name{
+    margin-top: 50px;
+    margin-left: 40px;
+    color: gold;
+    font-size: 40px
+}

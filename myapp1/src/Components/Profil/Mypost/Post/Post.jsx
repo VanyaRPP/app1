@@ -7,7 +7,6 @@ const Post = (props) => {
         <div>
             <textarea></textarea>
             <button>New post</button>
-            <button>Search</button>
             <div clasName={c.Posts}>
                 <Post1 sms="HI.HOW ARE YOU"like="15"dlike='1'/>
                 <Post1 sms="HI."like="1500"dlike='100'/>
