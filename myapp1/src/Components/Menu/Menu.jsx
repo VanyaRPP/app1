@@ -1,24 +1,25 @@
 import React from 'react';
 import c from './Menu.module.css'
+import { NavLink } from "react-router-dom"
 
 const Menu = () => {
     return (
         <div className={c.Menu}>
 
             <div clasName={c.item}>
-                <a href="/Profil">My Profile</a>
+                <NavLink to="/Profil" activeClassName={c.active}>My Profile</NavLink>
             </div>
             <div clasName={c.item}>
-                <a href="/Messages">Messages</a>
+                <NavLink to="/Messages" activeClassName={c.active}>Messages</NavLink>
             </div>
             <div clasName={c.item}>
-                <a href="/Music">Music</a>
+                <NavLink to="/Music" activeClassName={c.active}>Music</NavLink>
             </div>
             <div clasName={c.item}>
-                <a href="/News">News</a>
+                <NavLink to="/News" activeClassName={c.active}>News</NavLink>
             </div>
             <div clasName={c.item}>
-                <a href="/Setings">Setings</a>
+                <NavLink to="/Setings" activeClassName={c.active}>Setings</NavLink>
             </div>
 
         </div>

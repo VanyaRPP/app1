@@ -9,10 +9,6 @@ import News from './Components/News/News';
 import Setings from './Components/Setings/Setings';
 import { BrowserRouter, Route } from "react-router-dom"
 
-
-
-
-
 const App = () => {
   return (
     <BrowserRouter>

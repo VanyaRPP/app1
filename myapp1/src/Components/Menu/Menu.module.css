@@ -1,17 +1,18 @@
 .Menu{
-    grid-area: m;
-    background-color: rgb(36, 30, 43);
-    margin: 1px;
-    
-  }
-  .Menu div{
-    margin: 10px;
-    
-  }
-  .Menu a{
-    color:gold;
-    margin-top: 10px;
-    font-style: Arial;
-    font-stretch: normal;
-    text-decoration:none;
-  }
+  grid-area: m;
+  background-color: rgb(0, 0, 0);
+   margin: 1px;
+}
+.Menu div{
+  margin: 10px; 
+}
+.Menu a{
+  color:gold;
+  margin-top: 10px;
+  font-style: Arial;
+  font-stretch: normal;
+  text-decoration:none;
+}
+.Menu a.active{
+  color: aqua;
+}
