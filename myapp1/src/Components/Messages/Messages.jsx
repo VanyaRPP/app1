@@ -2,32 +2,38 @@ import React from 'react';
 import c from './Messages.module.css'
 import Dialogitems from './Dialogitem/Dialogitem';
 import Message from './Message/Message';
-const Messages = () => {
+const Messages = (props) => {
+    let dialogData = [
+        { id: 1, name: 'Vanya' },
+        { id: 2, name: 'Sanya' },
+        { id: 3, name: 'Kolya' },
+        { id: 4, name: 'Zenya' },
+        { id: 5, name: 'Tolya' },
+        { id: 6, name: 'Uma' },
+    ]
+
+    let dialogElements = dialogData.map(dia => <Dialogitems name={dia.name} id={dia.id} />);
+
+    let MessageData = [
+        { id: 1, Message: 'Hi!' },
+        { id: 2, Message: 'Hi! How are you?' },
+        { id: 3, Message: 'Hi!' },
+        { id: 4, Message: 'Hi! How are you?' },
+        { id: 5, Message: 'Hi!' },
+        { id: 6, Message: 'Hi! How are you?' },
+        { id: 7, Message: 'Hi!Vanyuafsk)' },
+    ]
+
+let MessageElements = MessageData.map(mes=><Message smska={mes.Message} ig={mes.id}/>);
+
     return (
         <div className={c.Dialogs}>
             <div className={c.dial}>
-                <Dialogitems name="Vanya" id="1" />
-                <Dialogitems name="Sanya" id="2" />
-                <Dialogitems name="Kolya" id="3" />
-                <Dialogitems name="Zenya" id="3" />
-                <Dialogitems name="Tolya" id="4" />
-                <Dialogitems name="Uma" id="5" />
+                {dialogElements}
             </div>
 
             <div className={c.mess}>
-                <Message smska="Hi!" />
-                <Message smska="Hi! How are you?" />
-                <Message smska="Hi!" />
-                <Message smska="Hi! How are you?" />
-                <Message smska="Hi!" />
-                <Message smska="Hi! How are you?" />
-                <Message smska="Hi!" />
-                <Message smska="Hi! How are you?" />
-                <Message smska="Hi!" />
-                <Message smska="Hi! How are you?" />
-                <Message smska="Hi!" />
-                <Message smska="Hi! How are you?" />
-                <Message smska="Hi!" />
+                {MessageElements}
             </div>
         </div>
     );
