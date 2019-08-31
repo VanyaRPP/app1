@@ -9,19 +9,19 @@ import News from './Components/News/News';
 import Setings from './Components/Setings/Setings';
 import { BrowserRouter, Route } from "react-router-dom"
 
-const App = () => {
+const App = (props) => {
   return (
     <BrowserRouter>
       <div className='wse'>
         <Header />
         <Menu />
         <div clasName="wse.content">
-          <Route path='/Profil' component={Profil} />
-          <Route path='/Messages' component={Messages} />
-          <Route path='/Music' component={Music} />
-          <Route path='/News' component={News} />
-          <Route path='/Setings' component={Setings} />
-          
+          <Route path='/Profil' render={() => <Profil postData={props.postData}/>} />
+          <Route path='/Messages' render={() => <Messages />} />
+          <Route path='/Music' render={() => <Music />} />
+          <Route path='/News' render={() => <News />} />
+          <Route path='/Setings' render={() => <Setings />} />
+
         </div>
 
       </div>
