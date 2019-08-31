@@ -10,14 +10,17 @@ import Setings from './Components/Setings/Setings';
 import { BrowserRouter, Route } from "react-router-dom"
 
 const App = (props) => {
+
+
+
   return (
     <BrowserRouter>
       <div className='wse'>
         <Header />
         <Menu />
         <div clasName="wse.content">
-          <Route path='/Profil' render={() => <Profil postData={props.postData}/>} />
-          <Route path='/Messages' render={() => <Messages />} />
+          <Route path='/Profil' render={() => <Profil postData={props.postData} />} />
+          <Route path='/Messages' render={() => <Messages dialogData={props.dialogData} MessageData={props.MessageData} />} />
           <Route path='/Music' render={() => <Music />} />
           <Route path='/News' render={() => <News />} />
           <Route path='/Setings' render={() => <Setings />} />
