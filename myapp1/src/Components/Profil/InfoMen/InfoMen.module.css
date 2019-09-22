@@ -1,17 +1,16 @@
-.Fon{
-    display: grid;
-    grid-template-columns: 200px 1fr 1fr;
+.Fon {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr;
 
-    background-image: url(https://mirpozitiva.ru/uploads/posts/2016-08/medium/1472042903_31.jpg);
+  background-image: url(https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg);
 }
-.Ava img{
-    margin: 20px;
-    background-color: gold;
-    
+.Ava img {
+  margin: 20px;
+  background-color: gold;
 }
-.Name{
-    margin-top: 50px;
-    margin-left: 40px;
-    color: gold;
-    font-size: 40px
+.Name {
+  margin-top: 50px;
+  margin-left: 40px;
+  color: gold;
+  font-size: 40px;
 }
